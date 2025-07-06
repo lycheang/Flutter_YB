@@ -34,7 +34,7 @@ class _TikTokMainPageState extends State<TikTokMainPage> {
           },
           children: [
             _buildShortsFeed(actorList, "For You"),
-            _buildShortsFeed(imageList, "Following"),
+            _buildShortsFeed(actorList, "Following"),
           ],
         ),
         Positioned(
@@ -44,9 +44,7 @@ class _TikTokMainPageState extends State<TikTokMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildTab("For You", 0),
-              const SizedBox(width: 16),
-              _buildTab("Following", 1),
+              
             ],
           ),
         ),
@@ -120,7 +118,9 @@ class _TikTokMainPageState extends State<TikTokMainPage> {
                   SizedBox(height: 20),
                   Icon(Icons.comment_outlined, color: Colors.white),
                   SizedBox(height: 20),
-                  Icon(Icons.share, color: Colors.white),
+                  Icon(Icons.reply, color: Colors.white),
+                  SizedBox(height: 20),
+                  Icon(Icons.more_vert, color: Colors.white),
                 ],
               ),
             ),
